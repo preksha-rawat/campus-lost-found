@@ -1,12 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
 
-# 1. Start the web toolkit
+# Start the web toolkit
 app = Flask(__name__)
 
-# 2. Tell the website what to show on the home page
+# Tell the website what to show on the home page
 @app.route('/')
 def home():
-    return "<h1>Welcome to the Campus Lost & Found</h1>"
-#3. turn the server on !
-if __name__ =='__main__':
+    # Send the HTML file we just made
+    return render_template('index.html')
+
+# Turn the server on
+if __name__ == '__main__':
     app.run(debug=True)
