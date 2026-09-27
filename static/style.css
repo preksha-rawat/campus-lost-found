@@ -1,0 +1,23 @@
+/* This makes the background light grey and changes the font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* This creates a clean white card for our text to sit inside */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* This makes the main heading dark blue */
+h1 {
+    color: #333366;
+}
